@@ -2,6 +2,7 @@ const { AuthenticationError } = require("apollo-server-express");
 const { User } = require("../models");
 const { signToken } = require("../utils/auth");
 
+// Defining the functionality for the mutations and queries and how you want them to interact with the models.
 const resolvers = {
   Query: {
     // Get a single user by id

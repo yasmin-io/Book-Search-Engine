@@ -1,5 +1,6 @@
 const { gql } = require("apollo-server-express");
 
+// Defining all the necassary Query and Mutation types required for this application
 const typeDefs = gql`
   type Query {
     me: User
