@@ -1,6 +1,6 @@
 # Book Search Engine
 
-This project was a challenge to convert RESTful API code with
+This project was to refactor RESTful API code to Apollo Server that uses GraphQL queries and mutations. The website itself is created for book readers to be able to search any book they want to read and organise them into lists. It was a challenging project but really put my knowledge to the test and really helped me understand the MERN stack.
 
 Link To Website: [Example]
 
@@ -14,6 +14,8 @@ This application used a variety of technologies such as:
 - GraphQL
 - Express
 - JWT
+- Heroku
+- Mongo DB Atlas
 - Mongoose
 - MongoDB
 
