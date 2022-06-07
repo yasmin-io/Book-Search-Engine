@@ -10,7 +10,8 @@ const {
 // import middleware
 const { authMiddleware } = require("../../utils/auth");
 
-// put authMiddleware anywhere we need to send a token for verification of user
+// Creating route paths and chaining on necassary functions
+// Using authMiddleware anywhere we need to send a token for verification of user
 router.route("/").post(createUser).put(authMiddleware, saveBook);
 
 router.route("/login").post(login);

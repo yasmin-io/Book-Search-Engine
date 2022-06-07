@@ -15,14 +15,16 @@ const server = new ApolloServer({
   context: authMiddleware,
 });
 
+// Allows us to acces the body of requests
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// if we're in production, serve client/build as static assets
+// If we're in production, serve client/build as static assets
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "../client/build")));
 }
 
+// Directing the client to the main homepage
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "../client/"));
 });
