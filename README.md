@@ -2,7 +2,7 @@
 
 This project was to refactor RESTful API code to Apollo Server that uses GraphQL queries and mutations. The website itself is created for book readers to be able to search any book they want to read and organise them into lists. It was a challenging project but really put my knowledge to the test and really helped me understand the MERN stack.
 
-Link To Website: [Example]
+Link To Website: [BookSearchEngine](https://agile-beyond-32641.herokuapp.com/saved)
 
 ## Technologies Used
 
@@ -19,11 +19,26 @@ This application used a variety of technologies such as:
 - Mongoose
 - MongoDB
 
-## MUST READ BEFORE USING APPLICATION !!
+## MUST READ BELOW BEFORE USING APPLICATION !!
 
-## Bugs & Fixs
+## How to use:
 
-This application is still under construction and you are able to view it and use it, however there is functionality missing. I have had a problem arise in my code and this will be fixed promptly. This means the website might not load temporarily.
+```
+- Search a book using the search bar. When you press enter, all of the books correlating to your search display below
+
+- Click Login/Sign Up to login or create a new account
+
+- When you are signed in, the books will display a clickable 'Save this Book' option
+
+- Click 'logout' to logout of your account
+
+- Click 'See Your Books' to see your current saved books
+```
+
+## Bugs & Fixes
+
+The application doesn't display your saved books on the save books page.
+However, they do save to the database.
 
 ## Need to Contact me?
 
