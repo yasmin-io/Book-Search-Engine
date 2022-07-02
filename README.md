@@ -2,7 +2,7 @@
 
 This project was to refactor RESTful API code to Apollo Server that uses GraphQL queries and mutations. The website itself is created for book readers to be able to search any book they want to read and organise them into lists. It was a challenging project but really put my knowledge to the test and really helped me understand the MERN stack.
 
-Link To Website: [BookSearchEngine](https://agile-beyond-32641.herokuapp.com/saved)
+Link To Website: [BookSearchEngine](https://agile-beyond-32641.herokuapp.com)
 
 ## Technologies Used
 
