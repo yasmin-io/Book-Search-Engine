@@ -14,10 +14,5 @@
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^5.1.0"
-  },
-  "dependencies": {
-    "@apollo/client": "^3.6.8",
-    "@apollo/react-hooks": "^4.0.0",
-    "graphql": "^16.5.0"
   }
 }

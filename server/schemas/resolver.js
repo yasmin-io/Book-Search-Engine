@@ -11,6 +11,7 @@ const resolvers = {
         const userData = await findOne({ _id: context.user._id }).select(
           "-__v -password"
         );
+
         return userData;
       }
 
@@ -43,22 +44,19 @@ const resolvers = {
       const token = signToken(user);
       return { token, user };
     },
-    saveBook: async (parent, { bookData }, context) => {
+    saveBook: async (parent, { input }, context) => {
       //savebook
       if (context.user) {
+        console.log(`BookData: ${input}`);
         const updatedUser = await User.findByIdAndUpdate(
-          {
-            _id: context.user._id,
-          },
-          {
-            $push: { savedBooks: bookData },
-          },
-          {
-            new: true,
-          }
+          { _id: context.user._id },
+          { $push: { savedBooks: input } },
+          { new: true }
         );
+        return updatedUser;
       }
-      return updatedUser;
+
+      throw new AuthenticationError("You must be signed in to save a book!");
     },
     removeBook: async (parent, { bookId }, context) => {
       //removebook
